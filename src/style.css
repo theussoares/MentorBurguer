@@ -1,0 +1,261 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #D9D9D9;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-pesquisa{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.input-de-pesquisa{
+    max-width: 240px;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+}
+
+.btn-pesquisar{
+    height: 30px;
+    max-width: 80px;
+    width: 100%;
+    background: #27AC02;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.6rem;
+}
+
+.menu-de-categorias {
+    margin-top: 20px;
+    display: flex;
+    gap:20px;
+}
+
+.btn-categorias{
+    height: 30px;   
+    max-width: 152px;
+    padding: 0 10px;
+    background: #27AC02;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.container-de-produtos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.card-do-produto{
+    min-width: 200px;
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+}
+
+.container-da-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.imagem-do-produto {
+    max-width: 130px;
+    width: 100%;
+    height: 100px;
+}
+
+.info-do-produto{
+    padding: 10px;
+}
+
+.nome-do-produto{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.categoria-do-produto{
+    font-size: 0.6rem;
+    color: #656565;
+}
+
+.valor-e-btn-do-produto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.valor-do-produto{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #656565;
+}
+
+.btn-add-to-cart{
+    max-width: 110px;
+    width: 100%;
+    background: #27AC02;
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 4px;
+}
+
+aside{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.carrinho{
+    max-width: 330px;
+    width: 100%;
+    height: 380px;
+    margin-bottom: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F3F3;
+    justify-content: space-between;
+}
+
+.header-carrinho{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.lista-de-produtos-no-carrinho{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    max-height: 270px;
+}
+
+.card-do-produto-no-carrinho{
+    width: 90%;
+    max-height: 85px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding-right: 10px;
+}
+
+.imagem-do-produto-no-carrinho{
+    max-width: 80px;
+    width: 100%;
+    height: 80px;
+}
+
+.container-produto-carrinho{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.controle-de-quantidade{
+    max-width: 50px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    padding-bottom: 10px;
+    display: flex;
+    align-self: end;
+}
+
+.container-dos-btn{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.btn-remover{
+    width: 16px;
+    height: 12px;
+    border: 1px solid #F36363;
+    color: #F36363;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.btn-adicionar{
+    width: 16px;
+    height: 12px;
+    border: 1px solid #27AC02;
+    color: #27AC02;
+    font-weight: 600;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.quantidade-do-produto{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.footer-carrinho{
+    bottom: 80px;
+    border-top: 1px solid #D9D9D9;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.total{
+    font-size: 1rem;
+    font-weight: 600;
+}
